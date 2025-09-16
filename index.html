@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale 1.0" />
-    <title>Weather App</title>
-    <link rel="stylesheet" href="resources/styles.css" />
+    <meta charset="utf-8" />
+    <title>Weather App - jQuery AJAX with Icons</title>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="weather-container">
-      <h2>Weather App</h2>
-      <input type="text" id="city" placeholder="Enter City" />
-      <button onclick="getWeather()">Search</button>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="getWeatherBtn">Search</button>
 
-      <img id="weather-icon" alt="Weather Icon" />
-
-      <div id="temp-div"></div>
-
-      <div id="weather-info"></div>
-
-      <div id="hourly-forecast"></div>
+    <div id="weatherResult">
+      <h2 id="cityName"></h2>
+      <p id="now">Now</p>
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+      <p id="tempContainer"><span id="temp"></span>°</p>
+      <p><span id="description"></span></p>
+      <p>Humidity<br /><span id="humidity"></span>%</p>
     </div>
-    <script src="./scripts.js"></script>
+
+    <script src="weatherScript.js"></script>
   </body>
 </html>

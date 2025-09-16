@@ -1,0 +1,104 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #2f3543;
+  color: #e3eaf2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 15px 40%;
+  text-align: center;
+  color: #757575;
+  font-weight: bold;
+}
+
+button {
+  margin: 0 47%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #e3eaf2;
+}
+
+input,
+input:not(:placeholder-shown),
+button {
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #2f3543;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(148, 148, 148, 0.1);
+  border: none;
+}
+
+#weatherResult {
+  display: none;
+}
+
+#cityName {
+  font-size: 2.4rem;
+  padding: none;
+  margin-bottom: -13px;
+}
+
+#now {
+  font-size: 12px;
+  font-weight: bold;
+  color: #757575;
+}
+
+#tempContainer {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px auto;
+}
+
+#description,
+#humidity {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 5px auto;
+}
+
+@media screen and (max-width: 700px) {
+  input {
+    font-size: 3rem;
+    margin: 2% 15%;
+    height: 60px;
+    border-radius: 40px;
+  }
+
+  button {
+    font-size: 2rem;
+    margin: 2% 40%;
+    height: 60px;
+    border-radius: 40px;
+  }
+
+  img {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+
+  #cityName,
+  #tempContainer {
+    font-size: 6rem;
+    margin: 0px auto;
+  }
+
+  #now,
+  #description,
+  #humidity,
+  p {
+    font-size: 2.3rem;
+    margin: 80px 0;
+  }
+
+  #now {
+    margin: 0;
+  }
+}
